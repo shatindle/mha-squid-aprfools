@@ -32,13 +32,6 @@
     <meta name="twitter:title" content="My Hero Academia: Heroes of Inkopolis | Funamation Films">
     <meta name="twitter:description" content="Follow the adventures of Deku and his friends as they cross dimensions and time!  How did Class 1-A even get to Inkopolis?">
     <meta name="twitter:image" content="/wp-content/funimationfilms-socialshare-default.jpg">
-
-
-
-
-
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <link rel="dns-prefetch" href="https://s.w.org/">
     
     <style type="text/css">
         img.wp-smiley,
@@ -114,8 +107,26 @@
                 jQuery("nav").removeClass("scrolled");
         })
     </script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5VMZ4X');
 
-    <article id="mamawrapper" class="container-fluid  computer" data-device="computer" style="padding-left:0;padding-right:0;">
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <article id="mamawrapper" class="container-fluid  computer" data-device="computer">
 
         <div id="videowrapper">
             <div class="fp-close scaleIn">
@@ -187,9 +198,12 @@
 
 
 
-        <div class="slidewrapper flex-active-slide" style="width: 100%; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;overflow:hidden;">
+
+        <section id="main_hero" class="row flexslider-slides _90h keep_vh_mobile scrollme scrolling">
+            <ul class="slides">
+                <li class="slidewrapper flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;overflow:hidden;">
                     <!-- image -->
-            <section class="slide-imgwrapper">
+                    <section class="slide-imgwrapper">
                         <img style="margin: auto;background: none;" src="/wp-content/uploads/2019/12/MHA_Hero.jpg" class="img-responsive" draggable="false">
 
                         <div class="movie_showing_information col-xs-12 no-gutter">
@@ -239,10 +253,17 @@
                             </div>
                         </div>
                     </section>
-        </div>
+                </li>
+
+            </ul>
+            <ol class="flex-control-nav flex-control-paging" style="bottom: 250px;"></ol>
+        </section>
+        <!-- <section id="single-content" class="container-fluid posttype-movie posttitle-my-hero-academia-heroes-rising"> -->
+        <div id="target"></div>
+
 
         <!-- Trailers -->
-        <section id="trailers" class="row no-gutter light " style="background-image: url(); background-color: #000000; position:relative;display:block;">
+        <section id="trailers" class="row no-gutter light " style="background-image: url(); background-color: #000000 ">
             <div class="wrapper content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                 <h2 id="trailer">Trailers</h2><!-- Trailers -->
                 <div id="trailer-wrapper">
